@@ -1,0 +1,123 @@
+JavaScript was made in 1995 in 10 days. It was made after java but
+has nothing in common with java. 
+In the early 2000's JavaScript was able to update without refreshing the page.
+Because there were multiple versions of Javascript on different browsers Ecmascript was made to 
+define a common set of rules for all browsers. It stabilized Javascript.
+Ecmascript is not a programming language you install or run, its a blueprint.
+
+Put <script> at the bottom of the body.
+<body>
+  <h1>Hello</h1>
+  <script src="script.js"></script>
+</body>
+
+IN JavaScript things don't always load in the order you want them to.
+
+There are 3 meta tags. The description, author, and viewport
+(used to see how to desplay the page on different screen sizes)
+
+when using css selectors us > to only select direct children ex: div > p
++ means to select the element right after the first element states as long as they are equal in level with the first element. ex: h1 + p (only the first p after h1 is selected.)
+~ does the same as + but also selects all the other second elements in the same level.
+
+JavaScript is mainly a front-end language.
+
+use "let" when setting up a variable.
+let level = 1;
+
+constants are variables that cannot be changed use "const" to set up a constant.
+const name = "Bob"
+
+Use camle case lastLogin
+
+press ctrl + shift + j to open devtools, then click sources
+
+.forEach() is a method 
+array.forEach(myFunction);
+function myFunction(item)
+{
+    console.log(item);
+}
+
+.map() method creates a new array by calling a function for each item in the original array.
+const nums = [1, 2, 3, 4]; 
+const dbNums = nums.map(double); 
+function double(num) 
+{ 
+    return num * 2; 
+} 
+console.log(dbNums); // 2, 4, 6, 8
+
+.filter() method creates a new array but only includes items that meet a certain condition.
+const ages = [12, 33, 16, 40]; 
+const result = ages.filter(checkAdult); 
+console.log(result); 
+function checkAdult(age) 
+{ 
+    return age >= 18; // 33, 40 
+} 
+
+The .reduce() method returns a single value.
+const nums = [1, 2, 3, 4]; 
+const sum = nums.reduce(totalNums); 
+function totalNums(total, item) 
+{ 
+    return total + item;
+}
+
+You can also use anonymous functions 
+as the array method parameter with any of these array methods. 
+const sum = nums.reduce(function(total, item) 
+{
+    return total + item;
+}); 
+console.log(sum);  //results in 10
+or
+const sum = nums.reduce((total, item)=> total + item); 
+console.log(sum); //results in 10
+
+Unique Operators:
+=== equal value and type
+!== not equal value or not equal type
+
+switch statements:
+After the switch keyword, you specify the variable to evaluate (day). 
+Each case represents a possible value. 
+The code following the colon : runs if the value matches the case. 
+let day = "Monday"; 
+switch (day) 
+{ 
+    case "Monday": 
+        console.log("Start of the workweek!"); 
+        break; 
+    case "Friday": 
+        console.log("Weekend is near!"); 
+        break; 
+    case "Saturday": 
+    case "Sunday": 
+        console.log("It's the weekend!"); 
+        break; 
+    default: 
+        console.log("Just another day."); 
+} 
+
+The DOM (Document Object Model) is the interface that allows 
+JavaScript to interact with HTML. 
+
+querySelector() selects the first element that matches the specified CSS selector. 
+ex: const element = document.querySelector("#myIdName");
+
+querySelectorAll() selects all elements that match the specified CSS selector and 
+returns a node list instead of a single element.  
+ex: const elements = document.querySelectorAll(".myClassName");
+
+getElementById() selects the first element with the specified ID attribute. 
+ex: const element = document.getElementById("myElementId"); 
+
+getElementsByClassName() selects all elements with the specified class name and 
+returns multiple elements. 
+ex: const elements = document.getElementsByClassName("myClassName");
+
+getElementsByTagName() selects all elements with a specific tag name (like div, p, 
+etc.) and returns multiple elements. 
+ex: const elements = document.getElementsByTagName("p"); 
