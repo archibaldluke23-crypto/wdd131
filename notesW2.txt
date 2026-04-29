@@ -1,0 +1,55 @@
+Document Object Model (DOM) is how a web browser 
+represents your webpage so that JavaScript can interact with it.
+DOM connects HTML and Javascript.
+
+With DOM Javascript can modify texts and elements
+
+Each element is a node
+
+to select element in Javascript:
+const title = document.getElementById("title");
+document.querySelector(".className");   // first match
+document.querySelectorAll("p");         // all <p> elements
+
+modifing texts:
+title.textContent = "New Title";
+title.innerText = "New Title";
+title.style.color = "blue";
+title.style.fontSize = "30px";
+
+Adding new elements:
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "Hello world!";
+document.body.appendChild(newParagraph); // adds to the end of the body before the body closes
+
+Removing:
+title.remove();
+const items = document.querySelectorAll(".item");
+items.forEach(item => item.remove());
+const container = document.getElementById("container");
+container.innerHTML = "";
+
+User interaction:
+const button = document.querySelector("button");
+const title = document.getElementById("title");
+button.addEventListener("click", () => {
+  title.textContent = "You clicked the button!";
+  title.style.color = "red";
+});
+
+Removing with interaction:
+const button = document.getElementById("removeBtn");
+const list = document.getElementById("list");
+button.addEventListener("click", () => {
+  if (list.lastElementChild) {
+    list.lastElementChild.remove();
+  }
+});
+
+changing attributes:
+img.src = "image.jpg";
+img.alt = "A picture";
+
+Removing attributes:
+const input = document.querySelector("input");
+input.removeAttribute("disabled");
