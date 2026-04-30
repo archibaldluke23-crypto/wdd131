@@ -8,19 +8,14 @@ selecter.addEventListener('change', ChangeTheme)
 
 function ChangeTheme() {
     let choice = selecter.value;
-
     if (choice == 'dark'){
-        body.style.backgroundColor = 'black';
-        content.style.color = 'white';
-
-        image.setAttribute('src', 'images/byui-logo-dark.png')
+        body.classList.add('dark');
+        image.setAttribute('src', 'images/byui-logo-dark.png');
+        h3.style.color = 'rgb(113, 210, 255)';
     }
     else{
-        body.style.backgroundColor = 'white';
-        content.style.color = 'black';
-        
+        body.classList.remove('dark');
         image.setAttribute('src', 'images/byui-logo-blue.webp')
+        h3.style.color = 'rgb(0, 99, 198)';
     }
-    h3.style.color = rgb(0, 101, 202);
-
 }

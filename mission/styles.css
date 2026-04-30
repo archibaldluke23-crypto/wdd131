@@ -1,5 +1,10 @@
 body {
     font-size: 15px;
+    color: black;
+}
+.dark {
+    background-color: black;
+    color: white;
 }
 #content {
     max-width: 32%;
@@ -7,7 +12,6 @@ body {
     margin: 40px auto;
     padding: 40px 100px;
     line-height: 1.4em;
-    color: black;
 
 }
 #intro {
