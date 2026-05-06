@@ -1,0 +1,38 @@
+Responsive web design (RWD) is an approach to building 
+websites so they automatically adapt to different 
+screen sizes and devices
+
+A media query says: “If the screen matches this 
+condition, use these styles.”:
+@media (condition) {
+  /* CSS rules */
+}
+Ex:
+@media (max-width: 600px) { // If the screen is 600px wide or smaller
+  body {
+    background-color: lightblue;
+  }
+}
+
+Its best to start with the mobile style first then 
+scale up. This helps you think of a content first approach.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+With viewport tag: Layout matches the device width,
+Media queries activate properly, Content is readable 
+and usable
+
+Different browsers built in styles aren't consistent so
+CSS Resets can help you start from a clean perdictable 
+baseline.
+
+CSS Normalize is a better practice than CSS Reset.
+Instead of wiping everything out (like a CSS Reset), 
+CSS Normalize keeps useful defaults and fixes inconsistencies.
+This uses more of em.
+When Normalizing you use a seperate sylesheet and 
+reference it above your normal sylesheet.
+
+One of the best ways to debug in JS is to use console.log()
+and stepping through code. 
+
