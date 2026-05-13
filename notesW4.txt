@@ -26,7 +26,7 @@ button.addEventListener("click", function() {
   alert("Clicked!");
 });
 
-Event listeners receive an event object automatically:
+Event listeners receive an event object (aka e) automatically:
 document.addEventListener("keydown", (event) => {
   console.log("Key pressed:", event.key);
 });
@@ -46,3 +46,8 @@ Empty lists and arrays are seen as true
 Hoisting is calling a function before or after 
 the function is declared. Only used in Declaration functions.
 
+makes the image not squished dispite what height and width you give it.
+object-fit: cover;
+
+makes it not in the flow of html:
+position: absolute;
