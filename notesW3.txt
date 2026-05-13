@@ -8,7 +8,7 @@ condition, use these styles.”:
   /* CSS rules */
 }
 Ex:
-@media (max-width: 600px) { // If the screen is 600px wide or smaller
+@media screen and (max-width: 600px) { // If the screen is 600px wide or smaller
   body {
     background-color: lightblue;
   }

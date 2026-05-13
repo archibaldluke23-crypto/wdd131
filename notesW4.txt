@@ -1,0 +1,48 @@
+Functions in JS:
+Declaration function:
+function sayHello() {
+  console.log("Hello!");
+}
+
+Function expression: // A function stored inside a variable.
+const multiply = function(a, b) {
+  return a * b;
+};
+
+Arrow function:
+const multiply = (a, b) => {
+  return a * b;
+};
+or
+const multiply = (a, b) => a * b;
+
+Anonymous Functions: // A function with no name.
+function() {
+  console.log("Hello");
+}
+
+Calling a function when an event happens:
+button.addEventListener("click", function() {
+  alert("Clicked!");
+});
+
+Event listeners receive an event object automatically:
+document.addEventListener("keydown", (event) => {
+  console.log("Key pressed:", event.key);
+});
+
+=== means equal to the value and type
+!== means not equal to the value or type
+
+Ternary operator: // short version of if elements
+let age = 20;
+let message = age >= 18 ? "Adult" : "Minor";
+
+If a string is empty "" it is seen as false 
+otherwise it is seen as true.
+0 is also seen as false.
+Empty lists and arrays are seen as true
+
+Hoisting is calling a function before or after 
+the function is declared. Only used in Declaration functions.
+
