@@ -34,7 +34,7 @@ document.addEventListener("keydown", (event) => {
 === means equal to the value and type
 !== means not equal to the value or type
 
-Ternary operator: // short version of if elements
+Ternary operator: // short version of an if statement
 let age = 20;
 let message = age >= 18 ? "Adult" : "Minor";
 

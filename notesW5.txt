@@ -1,0 +1,37 @@
+Web accessibility (often shortened to a11y) is 
+the practice of designing and building websites
+so that everyone can use them, including people
+with disabilities.
+
+Some users cannot use a mouse.
+
+Semantic HTML helps screen readers understand 
+the page structure. Use elements for their 
+intended purpose. Use alt text on images.
+
+ARIA: Accessible Rich Internet Applications.
+
+button.setAttribute("aria-expanded", "true");
+ARIA attributes help assistive technologies 
+understand dynamic content. ARIA supplements 
+HTML, not replaces it. provides missing information.
+
+Avoid clickable <div> elements unless you 
+fully support keyboard interaction.
+
+Have good text contrast and don't rely on colors 
+to guide all users.
+
+Try navigating your site using only your keyboard
+see if it all functions. Also try using a screen
+reader.
+
+Use browser accessibility tools (easiest start)
+Lighthouse (built into Google Chrome)
+How to use it:
+Open the webpage
+Press F12
+Go to the Lighthouse tab
+Run an accessibility audit
+
+Use the for="" to display what the element is.
