@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Book Reviewing website">
+    <meta name="author" content="Luke Archibald">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kids Read For Fun</h1>
+        <hr>
+        <nav aria-label="main menu">
+            <a href="#"><strong>About</strong></a>
+            <a href="#"><strong>Archive</strong></a>
+            <a href="#"><strong>Search</strong></a>
+        </nav>
+        <hr>
+        <hr class="transform-hr">
+    </header>
+    <main id="main-content" role="main">
+        <section id="book-list" aria-label="Book Reviews">
+            <article class="book">
+                <p class="date" aria-label="date"> <strong><i>July 4, 2022</i></strong></p>
+                <p class="age" aria-label="age"><strong>10-14</strong></p>
+                <p class="genre" aria-label="genre"><strong>Fantasy</strong></p>
+                <p class="rating"><span aria-label="rating: 4 out of 5 stars" role="img">⭐⭐⭐⭐</span></p>
+                <hr class="vertical-seperator">
+                <h2 aria-label="Book title">Septimus Heap Book One: Magyk</h2>
+                <img src="images/book.jpg" alt="Magical book with a keyhole">
+                <p class="recommendation" aria-label="recommendation"><strong>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</strong></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p aria-label="author name"><strong>John Doe</strong></p>
+    </footer>
+</body>
+</html>
