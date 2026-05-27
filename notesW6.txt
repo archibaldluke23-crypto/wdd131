@@ -1,0 +1,42 @@
+A callback function in JavaScript is a 
+function that is passed into another 
+function to be run later. It gets passed through
+like a argument
+
+Don't put () after a callback function or it will
+just call the function instantly.
+
+a function inside a addEventListener is a callback
+function.
+
+setTimeout(() => {
+  console.log("Hello after 2 seconds"); // callback runs after waiting
+}, 2000);
+
+.then() functions are callbacks.
+
+const doubled = numbers.map(num => num * 2);
+
+array methods:
+forEach() run code for every item:
+numbers.forEach(num => {
+  console.log(num);
+});
+
+map() transforms items into new values:
+const doubled = numbers.map(num => num * 2);
+
+filter() keep only matching items:
+const big = numbers.filter(num => num > 10);
+
+find() get the first matching item:
+const result = users.find(user => user.id === 3);
+
+reduce() combine values into one result:
+const total = numbers.reduce((sum, num) => sum + num, 0);
+
+some() checks if at least one item matches:
+numbers.some(num => num > 100);
+
+every() checks if all items match:
+numbers.every(num => num > 0);
