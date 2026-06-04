@@ -1,0 +1,90 @@
+Forms are the primary way websites collect 
+information from users
+
+Examples of forms:
+Login pages
+Registration forms
+Search bars
+Contact forms
+Online checkout pages
+
+<form>
+  <label for="name">Name:</label>
+  <input id="name" type="text">
+  <button type="submit">Submit</button>
+</form>
+
+<input type="text">
+<input type="email">
+<input type="password">
+<input type="checkbox">
+<input type="radio" name="size"> // multiple choice questions
+<input type="tel"> // shows a phone keypad on mobile
+
+event.preventDefault() stops the page from 
+refreshing so javascript can proccess the input
+
+submitButton.disabled = true; // disables the submitbutton
+
+<input type="text" required> // if a feild is required
+
+When users click or tab into a field:
+input:focus {}
+
+input:invalid {
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid green;
+}
+input::placeholder {
+  color: gray;
+}
+
+the name attribute is sent to the server with the input:
+name="email"
+email=user@example.com
+
+Radio buttons in a group all have to share the same name.
+Use <fieldset> to group the buttons together so screen
+readers can read them properly.
+
+Don't use placeholders to replace labels
+
+<div aria-live="polite"></div> This allows screen readers to announce new messages automatically.
+
+favicon (favorite icon)
+the small icon next to each page title is the favicon.
+
+favicon link:
+<link
+  rel="icon"
+  type="image/png"
+  href="favicon.png"> // add in the head of html
+The filename can end in .ico, .png, or .svg
+
+favicon sizes:
+16 x 16
+32 x 32 recommended
+48 x 48
+64 x 64
+
+Many websites provide multiple sizes:
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+The browser automatically chooses the most appropriate size.
+
+.svg scales to any size.
+
+An apple-touch-icon is used by Apple devices when a 
+user saves a website to their Home Screen.
+They are much larger like 180 x 180
+<link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="apple-touch-icon.png">
+
+pixlr.com will let you create favicons for free.
+
+Put the image in the root instead of the images folder.
