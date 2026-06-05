@@ -85,6 +85,6 @@ They are much larger like 180 x 180
     sizes="180x180"
     href="apple-touch-icon.png">
 
-pixlr.com will let you create favicons for free.
+pixlr.com/editor will let you create favicons for free.
 
 Put the image in the root instead of the images folder.
