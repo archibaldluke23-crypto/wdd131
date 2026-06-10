@@ -1,0 +1,70 @@
+Objects purpose is to store related data and behavior together.
+
+An object is like C#'s classes:
+const student = {
+  firstName: "Luke",        // property
+  lastName: "Archibald",
+  major: "Computer Science",
+  gpa: 3.8,
+
+  hello() {                 // method
+    console.log("Hello!");
+  }
+};
+console.log(student.firstName);
+student.hello();
+
+console is an object
+log is one of its methods
+
+Creating an empty object:
+const student = {};
+Then you can create properties:
+student.firstName = "Luke";
+student.major = "Computer Science";
+
+Removing properties:
+delete car.model;
+
+You can also access properties using brackets and a string:
+console.log(student["firstName"]);
+const propertyName = "major";
+console.log(student[propertyName]);
+
+Nested objects:
+const student = {
+  name: "Luke",
+  address: {
+    city: "Rexburg",
+    state: "Idaho"
+  }
+};
+
+If address doesn't exist, JavaScript returns "undefined":
+console.log(student.address?.city);
+
+Older method syntax:
+bark: function() {
+    console.log("Woof!");
+  }
+
+The special keyword this refers to the object that called the method:
+const student = {
+  name: "Luke",
+
+  introduce() {
+    console.log("Hi, I'm " + this.name);
+  }
+};
+student.introduce();
+Hi, I'm Luke
+
+Adding a method to an object:
+const car = {
+  make: "Toyota"
+};
+car.start = function() {
+  console.log("Engine started");
+};
+
+Arrow functions don't get their own "this"
