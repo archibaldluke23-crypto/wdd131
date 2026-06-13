@@ -66,5 +66,6 @@ const car = {
 car.start = function() {
   console.log("Engine started");
 };
+button.addEventListener("click", () => car.start()); // don't forget to add an arrow function to the addEventListener
 
 Arrow functions don't get their own "this"
