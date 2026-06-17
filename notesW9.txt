@@ -1,0 +1,81 @@
+flexbox is commonly used for Navigation bars.
+
+Flexbox is designed for one-dimensional layouts, 
+meaning it arranges items in either a row or a column.
+
+To use Flexbox, set the parent element's display to flex.
+
+By default, Flexbox places items in a horizontal row.
+
+There is a flex container, and each element inside it 
+is a flex item.
+
+flex-direction: row; controls the direction of the items:
+row: Items are placed the same as the text direction.
+row-reverse: Items are placed opposite to the text direction. // when reversing the start and end are reversed as well
+column: Items are placed top to bottom.
+column-reverse: Items are placed bottom to top.
+
+justify-content
+Controls alignment along the main axis (left and right):
+flex-start: Items align to the left side of the container.
+flex-end: Items align to the right side of the container.
+center: Items align at the center of the container.
+space-between: Items display with equal spacing between them.
+space-around: Items display with equal spacing around them.
+
+align-items(used on all items)/ align-self(used on one item)
+Controls alignment along the cross axis (up and down):
+flex-start: Items align to the top of the container.
+flex-end: Items align to the bottom of the container.
+center: Items align at the vertical center of the container.
+baseline: Items display at the baseline of the container.
+stretch: Items are stretched to fit the container.
+
+Align-content determines the spacing between lines, 
+while align-items determines how the items as a whole 
+are aligned within the container. When there is only 
+one line, align-content has no effect.
+
+flex-wrap
+Allows items to move onto a new line if there isn't 
+enough room.
+nowrap: Every item is fit to a single line.
+wrap: Items wrap around to additional lines.
+wrap-reverse: Items wrap around to additional lines in reverse.
+
+flex-flow
+combining flex-wrap with flex-direction 
+flex-flow: row/column wrap;
+
+flex: 1 1 250px;
+Allows items to grow and share available space. They will
+grow equally.
+flex: {growRate} {shrinkRate} {beginningSize}
+
+order: 0;
+sets the order of a specific item from left to right
+within the flexbox
+
+
+To spread items across the container
+Use justify-content: space-between;
+
+To Align items vertically
+Use align-items.
+
+Use gap to space them out as well.
+
+social media meta tags:
+<!-- Open Graph -->
+<meta property="og:title" content="My Website">
+<meta property="og:description" content="My web development projects.">
+<meta property="og:image" content="https://example.com/image.jpg"> // image size 1200 x 600px
+<meta property="og:url" content="https://example.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="My Website">
+<meta name="twitter:description" content="My web development projects.">
+<meta name="twitter:image" content="https://example.com/image.jpg">
