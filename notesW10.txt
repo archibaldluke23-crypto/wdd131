@@ -1,0 +1,91 @@
+Search Engine Optimization (SEO) is the 
+process of improving a website so that 
+search engines like Google and Bing can 
+better understand it and potentially rank it 
+higher in search results.
+
+1 have a descriptive title.
+
+2 have a meta description: 
+<meta name="description" content="Learn beginner-friendly chess openings and improve your game.">
+
+3 use the h1 h2 h3 elements to include specific 
+search words.
+One main <h1> per page
+Use <h2> for major sections
+Use <h3> for subsections
+
+4 make sure your page has good accurate content.
+
+5 Use descriptive file names and alt text.
+
+6 Responsive design helps SEO.
+
+7 Faster websites generally provide a better 
+user experience. Optimize: Images, CSS, JavaScript
+
+8 Use meaningful URLs: example.com/chess/openings
+
+9 Link related pages together.
+
+10 Accessibility helps SEO
+
+11 Add social media meta tags
+
+test with lighthouse to find SEO issues.
+
+use .sort() to sort arrays.
+sort will convert the ints to strings so we need 
+to have a function on the inside to keep them ints
+.sort((a, b) => a - b);
+
+sort numbers descending:
+numbers.sort((a, b) => b - a);
+
+alphabetically:
+names.sort();
+or
+students.sort((a, b) => a.localeCompare(b));
+
+const students = [
+{ name: "Luke", grade: 88 },
+{ name: "Sarah", grade: 95 },
+{ name: "Bob", grade: 72 }
+];
+students.sort((a, b) => a.grade - b.grade);
+console.log(students);
+Output:
+[
+{ name: "Bob", grade: 72 },
+{ name: "Luke", grade: 88 },
+{ name: "Sarah", grade: 95 }
+]
+
+filtering an array. filter() does not change 
+the original array:
+const newArray = array.filter(function(element) {
+  return condition;
+});
+
+keeping only evens:
+const numbers = [1, 2, 3, 4, 5, 6];
+const evens = numbers.filter(num => num % 2 === 0);
+output
+[2, 4, 6]
+
+Search feature:
+const products = [
+  "Laptop",
+  "Mouse",
+  "Keyboard",
+  "Monitor"
+];
+const search = "mo";
+const results = products.filter(product =>
+  product.toLowerCase().includes(search.toLowerCase())
+);
+Output
+["Mouse", "Monitor"]
+
+Upper case letter words are by defalt put 
+before lower case letter words
