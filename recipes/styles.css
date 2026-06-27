@@ -161,6 +161,7 @@ p {
         column-gap: 1.5rem;
         min-height: 425px;
     }
+    
     .recipe img {
         width: 100%;
         max-width: 500px;
