@@ -349,4 +349,5 @@ function search()
 {
     console.log(searchBar.value);
     filterRecipes(searchBar.value);
-}   
+}  
+ 
