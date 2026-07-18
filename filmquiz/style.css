@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Racing+Sans+One&display=swap');
+/*
+heading font:
+"Racing Sans One", sans-serif;
+p font:
+"Google Sans", sans-serif;
+
+--primary-color: #243B4A; dark blue
+  --secondary-color: #87BCDE; light blue
+  --accent1-color: #4E4D5C; blue grey
+  --accent2-color: #805E73; purple grey
+*/
+*{
+    font-family: "Google Sans", sans-serif;
+}
+body{
+    background-color: #4E4D5C;
+}
+main{
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 40%;
+    max-height: 305px;
+    background-color: #243B4A;
+    border-radius: 10px 10px 0 0;
+}
+#logo {
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    margin-left: 0;;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    order: 1;
+
+}
+#tape{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-self: flex-end;
+    flex: 1;
+    margin-right: 0;
+    margin-left: 100px;
+    margin-bottom: 0;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+header h1{
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 3em;
+    color: #87BCDE;
+    text-align: left;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    order: 2;
+}
+p{
+    font-family: "Google Sans", sans-serif;
+    font-size: 1.5em;
+    color: #4E4D5C;
+    text-align: left;
+    margin: 40px;
+    order: 3;
+}
+.movie-question{
+    margin-bottom: 100px;
+    
+}
+h3 {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 100px;
+}
+.box{
+    font-size: 1.2em;
+    color: #e2e2e2;
+    margin: 5px;
+    background-color: #243B4A;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #4E4D5C;
+}
+.box:hover{
+    background-color: #4E4D5C;
+    border: 5px solid #243B4A;
+
+}
+button {
+    display: flex;
+    width: 150px;
+    margin: 30px;
+    justify-self: center;
+    justify-content: center;
+    font-size: 1.1em;
+    background-color: #87BCDE;
+    color: #000000;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #4E4D5C;
+    color: #ffffff;
+}
+.movie-question img {
+    width: 80%;
+    height: 80%;
+    max-width: 350px;
+    display: flex;
+    justify-self: center;
+    border: 2px solid #000000;
+}
+.img-background {
+    background-color: #4E4D5C;
+    border-radius: 10px;
+    width: 60%;
+    height: 80%;
+    min-width: 350px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+#results{
+    margin-top: 100px;
+}
+#results p{
+    
+    text-align: center;
+    font-size: 2em;
+}
+#result-imgs img{
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+    border: 2px solid #000000;
+}
+#result-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+footer{
+    display: flex;
+   justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+    max-height: 305px;
+    background-color: #243B4A;
+    border-radius: 0 0 10px 10px;
+}
+footer p{
+    font-family: "Google Sans", sans-serif;
+    font-size: 1.1em;
+    color: #87BCDE;
+}
+.hide {
+    display: none;
+    visibility: hidden;
+}
+@media (min-width: 800px) {
+    header h1{
+        font-size: 5em;
+        display: flex;
+        align-self: center;
+    }
+    header{
+    grid-template-rows: 125px 1fr;
+    }
+    .movie-question{
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+        grid-template-rows: 75px 100px 1fr;
+        max-height: 600px;
+    }
+    h3{
+        font-size: 3em;
+        grid-column: 1/3;
+        grid-row: 1/2;   
+        margin-top: 0;
+    }
+    .question {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0;
+        margin-left: 20px;
+    }
+    form {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .movie-question img{
+         max-width: 100%;
+         max-width: 300px;
+        height: auto;
+        grid-column: 2/3;
+        grid-row: 2/4;
+  
+    }
+    #result-imgs img{
+    width: 20%;
+    height: 20%;
+    margin: 17px;
+    border: 2px solid #000000;
+    }
+    #result-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+}
